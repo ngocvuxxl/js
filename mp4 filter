@@ -1,0 +1,1 @@
+javascript:const string = document.body.innerHTML;const matches = string.match(/https?:\/\/(.[^\s]*?)(mp4|mov|m4v)+/gi);if(matches.length > 0) {	for (i = 0; i < matches.length; i++) {  document.writeln(matches[i]);}	var next = string.match(/^<a href="(.*?)" class="pageNav-jump pageNav-jump--next"/gm);	document.writeln(next[1]+"' style='font-size:30px'>TRANG TIẾP</a>");}
